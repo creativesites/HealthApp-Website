@@ -67,14 +67,14 @@ export default function Home() {
         </div>
 
         {/* Hero Image Showcase */}
-        <div className="lg:col-span-5 relative w-full h-[400px] md:h-[500px] bg-white border border-hairline rounded-hero shadow-xl overflow-hidden flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-gradient-to-tr from-discovery-aura to-white/10 opacity-65 z-0" />
+        <div className="lg:col-span-5 relative w-full h-[400px] md:h-[500px] bg-white border border-hairline rounded-hero shadow-xl overflow-hidden flex items-center justify-center">
+          <div className="absolute inset-0 bg-gradient-to-tr from-discovery-aura to-white/10 opacity-45 z-0" />
           <div className="relative z-10 w-full h-full">
             <Image
-              src="/images/80b61d5c-35e3-4a07-a723-80c971d28f31.png"
-              alt="Zambia Health Sanctuary Application Interface"
+              src="/images/hero1.jpg"
+              alt="Zambia Health Sanctuary Healthcare"
               fill
-              className="object-contain"
+              className="object-cover"
               priority
             />
           </div>

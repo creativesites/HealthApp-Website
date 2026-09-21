@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Footer: React.FC = () => {
   return (
@@ -7,9 +8,20 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* About column */}
         <div className="flex flex-col gap-4">
-          <span className="text-white text-lg font-bold tracking-tight">
-            Zambia Health Sanctuary
-          </span>
+          <div className="flex items-center gap-3">
+            <div className="relative w-10 h-10 border border-dark-matte-border rounded-standard overflow-hidden bg-white flex items-center justify-center p-0.5 shadow-sm">
+              <Image
+                src="/images/80b61d5c-35e3-4a07-a723-80c971d28f31.png"
+                alt="Zambia Health Sanctuary Logo"
+                width={36}
+                height={36}
+                className="object-contain"
+              />
+            </div>
+            <span className="text-white text-lg font-bold tracking-tight">
+              Zambia Health Sanctuary
+            </span>
+          </div>
           <p className="text-sm text-soft-slate leading-relaxed">
             A secure digital platform connecting patient communities with accredited healthcare specialists across Zambia. Our directory features practitioners registered with the Health Professions Council of Zambia (HPCZ).
           </p>

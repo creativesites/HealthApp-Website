@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Navbar: React.FC = () => {
   return (
@@ -7,21 +8,15 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           {/* Logo Icon representation */}
-          <div className="w-10 h-10 bg-emerald/10 border border-emerald/20 flex items-center justify-center rounded-standard group-hover:bg-emerald/20 transition-all duration-300">
-            <svg
-              className="w-5 h-5 text-emerald"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-              />
-            </svg>
+          <div className="relative w-11 h-11 border border-hairline rounded-standard overflow-hidden bg-white flex items-center justify-center p-0.5 shadow-sm">
+            <Image
+              src="/images/80b61d5c-35e3-4a07-a723-80c971d28f31.png"
+              alt="Zambia Health Sanctuary Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+              priority
+            />
           </div>
           <div>
             <span className="text-lg font-bold tracking-tight text-ink-navy block">

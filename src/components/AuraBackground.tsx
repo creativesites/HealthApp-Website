@@ -40,12 +40,17 @@ export const AuraBackground: React.FC<AuraBackgroundProps> = ({
 
   return (
     <div
-      className={`relative min-h-screen bg-canvas text-ink-navy overflow-hidden transition-colors duration-700 ${className}`}
+      className={`relative min-h-screen bg-canvas text-ink-navy overflow-hidden transition-all duration-700 ${className}`}
       style={{
         backgroundImage: `
           radial-gradient(circle at 86% 10%, ${colors.primary} 0%, ${colors.secondary} 35%, transparent 75%),
-          radial-gradient(circle at 35% 0%, ${colors.secondary} 0%, transparent 60%)
+          radial-gradient(circle at 35% 0%, ${colors.secondary} 0%, transparent 60%),
+          linear-gradient(rgba(251, 250, 247, 0.93), rgba(251, 250, 247, 0.95)),
+          url('/images/ICFRb.jpg')
         `,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
       }}
     >
       {/* Soft ambient noise or subtle overlay can go here if needed, keeping it minimal for maximum performance */}
