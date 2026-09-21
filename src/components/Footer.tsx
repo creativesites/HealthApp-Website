@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
           &copy; {new Date().getFullYear()} Zambia Health Sanctuary. All rights reserved.
         </span>
         <span className="tracking-wide uppercase font-semibold text-[10px] bg-dark-matte-surface px-3 py-1.5 rounded-small border border-dark-matte-border text-emerald">
-          Official Clinical ShowCase v1.0.1
+          Official Clinical ShowCase v1.0.2
         </span>
       </div>
     </footer>
