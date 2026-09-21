@@ -1,4 +1,3 @@
-'usemain'; // NextJS client component flag
 'use client';
 
 import React, { useState, useMemo } from 'react';
