@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+@theme {
+  --color-canvas: #FBFAF7;
+  --color-ink-navy: #0B2545;
+  --color-slate: #4A5A70;
+  --color-soft-slate: #66758A;
+  --color-sphere-blue: #1F5FBF;
+  --color-emerald: #2EA84F;
+  --color-lime: #8CD62A;
+  --color-hairline: #E7ECF2;
+  --color-honey-gold: #FCD355;
+  --color-honey-gold-light: #FFF6D6;
+  --color-dark-matte: #181A1E;
+  --color-dark-matte-surface: #22252B;
+  --color-dark-matte-border: #32363E;
+  --color-crisis-coral: #C8402F;
+  --color-crisis-coral-soft: #FDF0EE;
+  --color-discovery-aura: #DCE9FB;
+  --color-sessions-aura: #DDF3E6;
+  --color-self-care-aura: #E6E1FA;
+  --color-payments-aura: #F6E9D2;
+  --color-mist-surface: #F1F4F8;
+
+  --radius-small: 12px;
+  --radius-standard: 20px;
+  --radius-prominent: 28px;
+  --radius-hero: 36px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #FBFAF7;
+  --foreground: #0B2545;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
 }
