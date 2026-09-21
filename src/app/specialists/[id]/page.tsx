@@ -7,6 +7,12 @@ import { Navbar } from '../../../components/Navbar';
 import { Footer } from '../../../components/Footer';
 import { practitioners, services, SpecialtyInfo } from '../../../data/mockData';
 
+export async function generateStaticParams() {
+  return practitioners.map((p) => ({
+    id: p.id,
+  }));
+}
+
 interface ProfilePageProps {
   params: Promise<{
     id: string;
