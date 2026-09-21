@@ -50,7 +50,7 @@ export const AuraBackground: React.FC<AuraBackgroundProps> = ({
         `,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
+        backgroundAttachment: 'scroll',
       }}
     >
       {/* Soft ambient noise or subtle overlay can go here if needed, keeping it minimal for maximum performance */}
